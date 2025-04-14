@@ -1,0 +1,43 @@
+.partners {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.swiperLogo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.swiper__partners-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.partners__slide {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:1440px) {
+
+}
+
+@media (max-width:1140px) {  
+}
+
+@media (max-width:1080px) {  }
+
+
+@media (max-width:1040px) {
+}
+
+@media (max-width:768px) { 
+     .partners {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+}

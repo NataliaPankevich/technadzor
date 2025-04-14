@@ -1,0 +1,130 @@
+.attraction {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.attraction__container {
+    position: relative;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.attraction__img-wrapper {
+    width: 100%;
+}
+
+.attraction__img {
+    width: 100%;
+}
+
+.attraction__slogan-wrapper {
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    max-width: 500px;
+    padding: 40px 35px;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    bottom: -30px;
+    right: 90px;    
+}
+
+.attraction__slogan {
+    font-weight: 700;
+    font-size: 35px;
+    color: #12223c;
+    margin-bottom: 35px;
+}
+
+.attraction__text {
+    font-weight: 700;
+    font-size: 20px;
+    color: rgba(18, 34, 60, 0.8);
+    margin-bottom: 50px;
+}
+
+.attraction__button {
+    background-color: #F89410;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    font-family: 'Inter', sans-serif;
+    margin-left: auto;
+    display: inline-block;    
+}
+
+
+@media (max-width:1440px) {}
+
+@media (max-width:1240px) {
+    .attraction__slogan-wrapper {
+        max-width: 400px;
+        padding: 30px 25px;
+    }
+
+    .attraction__slogan {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .attraction__text {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (max-width:1040px) {
+    .attraction__container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .attraction__slogan-wrapper {
+        right: 30px;
+        max-width: 350px;
+    }
+    .attraction__slogan {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .attraction__text {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .attraction__button {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:768px) {
+    .attraction {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+
+    .attraction__slogan-wrapper {
+        padding: 30px 25px;
+        right: 15px;
+        bottom: -60px;
+    } 
+}
+
+@media (max-width:568px) {
+    .attraction__button {
+        font-size: 16px;
+    }
+    .attraction__slogan-wrapper {
+        max-width: 100%;
+        right: 20px;
+        left: 20px;        
+        padding: 20px;
+    }
+    .attraction__slogan {
+        margin-bottom: 15px;
+    }
+
+
+}
+
+@media (max-width:344px) {}
