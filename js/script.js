@@ -50,3 +50,11 @@ new Swiper('.swiperLogo', {
     }, 
 
 });
+
+//mask
+
+const phone = document.getElementById("phone");
+
+var imPhone = new Inputmask("+375 (99) 999-99-99");
+imPhone.mask(phone);
+

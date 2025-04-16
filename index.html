@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Инжиниринговая компания, технадзор, выполнение функций заказчика, инженерные услуги" >
+    <meta name="description" content="Официальный сайт ОДО «Технадзор». Комплексное управление строительной деятельностью в Беларуси.">
     <title>Инжиниринговая компания ОДО "Технадзор" в Минске, Беларусь</title>
 
     <!--libraries-->
@@ -26,12 +28,14 @@
     <link rel="stylesheet" href="./styles/footer.css">
 
     <!--favicon-->
-    <link rel="icon" href=""> <!-- 32×32 -->
-    <link rel="icon" href="" type="image/svg+xml">
-    <link rel="apple-touch-icon" href=""> <!-- 180×180 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!--scripts-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/inputmask.min.js" defer></script>
     <script src="./js/script.js" defer></script>
 </head>
 
@@ -212,27 +216,37 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper swiper__projects-wrapper">
                     <div class="swiper-slide">
-                        <div class="projects__image" style="background-image: url('./images/sport.jpg')">
+                        <div class="projects__image" style="background-image: url('./images/project1.webp')">
                             <p class="projects__text">Спорт-комплекс</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="projects__image" style="background-image: url('./images/triumf.jpg')">
+                        <div class="projects__image" style="background-image: url('./images/project2.webp')">
                             <p class="projects__text">Спорт-комплекс</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="projects__image" style="background-image: url('./images/minsk.jpg')">
+                        <div class="projects__image" style="background-image: url('./images/project3.webp')">
                             <p class="projects__text">Спорт-комплекс</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="projects__image" style="background-image: url('./images/minsk.jpg')">
+                        <div class="projects__image" style="background-image: url('./images/project4.webp')">
                             <p class="projects__text">Спорт-комплекс</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="projects__image" style="background-image: url('./images/minsk.jpg')">
+                        <div class="projects__image" style="background-image: url('./images/project5.webp')">
+                            <p class="projects__text">Спорт-комплекс</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="projects__image" style="background-image: url('./images/project6.webp')">
+                            <p class="projects__text">Спорт-комплекс</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="projects__image" style="background-image: url('./images/project7.webp')">
                             <p class="projects__text">Спорт-комплекс</p>
                         </div>
                     </div>
@@ -312,9 +326,10 @@
             <div class="form__wrapper">
                 <h2 class="form__title">СВЯЗАТЬСЯ С НАМИ</h2>
                 <form id="form" class="form" action="./mail.php" method="post">
-                    <input class="form__input" type="text" name="name" placeholder="ФИО">
-                    <input class="form__input" type="text" name="phone" placeholder="Телефон">
-                    <input class="form__input" type="text" name="email" placeholder="Email">
+                    <input class="form__input" type="text" name="name" placeholder="ФИО" required>
+                    <input id="phone" class="form__input" type="tel" name="phone"
+                    placeholder="Телефон" required>
+                    <input class="form__input" type="email" name="email" placeholder="Email" required>
                     <textarea class="form__textarea" name="message"></textarea>
                     <!--Устанавливает кнопку для отправки данных формы в обработчик формы.-->
                     <button class="form__button" type="submit">ОТПРАВИТЬ <svg width="38" height="38" viewBox="0 0 38 38"
