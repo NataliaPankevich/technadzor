@@ -8,11 +8,19 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 80px; 
-    gap:40px;
+    gap: 40px;
 }
 
-.reviews__item {
-    border: 1px solid rgba(0, 0, 0, 0.2);
+.reviews__img-wrapper {
+    border: 1px solid rgba(0, 0, 0, 0.2);  
+    width: calc((100% - 100px)/6);   
+    min-width:200px;  
+}
+.reviews__img { 
+    width: 100%; 
+    object-fit: cover;
+    object-position: center;
+
 }
 .reviews__line { 
     width: 100%;
@@ -27,7 +35,9 @@
 
 .reviews__list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;  
+    justify-content: center;
+    flex-wrap: wrap;
     gap:20px;
 }
 
